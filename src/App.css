@@ -1,38 +1,259 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  background-image: url(./components/Images/CT_SkillTest_v3-44.png);
+  height: 100vh;
+ 
+}
+.header-img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 5px;
+  margin-right: 20%;
+  margin-left: 20% ;
+}
+.la-icon{
+  position: relative;
+  top:50%;
+  left: 20%;
+  height:120px;
+}
+.btm-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:2px ;
+  margin-left:20%;
+  margin-right: 10%;
+  height: 70px;
+}
+.history{
+  background-image: url('./components/Images/CT_SkillTest_v3-35.png');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icon1{
+    height: 20%;
+   margin-top: 30px;
+  position: absolute;
+  left: 30%;
+}
+.history-text{
+  position: relative;
+  top: 36%;
+  left:-2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text{
+    font-size: 16px;
+    line-height: 1.5;
+  margin-top: 8%;
+  margin-left: 35%;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  word-break: break-word;
+  text-align: left; 
+}
+/* Small screens */
+@media only screen and (max-width: 768px) {
+  .text{
+    font-size: 14px;
+    line-height: 1.4;
+    margin-left: 30%;
+    padding-top: 3rem
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Medium screens */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.text{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+  .text{
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+.climb{
+  margin-top: 10px;
+  margin-left: 15%; 
+  display: flex;
+  align-items: center;
+  gap: 20px;  
+}
+.climb-text{
+  position: relative;
+  left: 55%;
+  top: -70px;
+}
+
+.lorem{
+  width:50rem;
+  margin-left: 10%;
+  margin-right: 40px;
+  text-align: left;
+  
+}
+.mountain{
+  background-color:#0c8ce9;
+}
+.flexbox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+.mountain1{
+  margin-left: 15rem; 
+}
+.btns{
+  background-color: transparent;
+  border: none;
+ 
+}
+.mountain1:hover {
+  background-color: rgba(51,51,51,0.5);;
+}
+.mountain2:hover{
+  background-color: rgba(51,51,51,0.5);;
+}
+.schedule{
+  background-image: url('./components/Images/CT_SkillTest_v3-11.png');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background: gray;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.box {
+     position: relative;
+     top: 10%;
+     left: 20%;
+     height: 15rem;
+     background: radial-gradient(circle at center, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+     opacity: 1;
+     transition: opacity 0.5s ease-out;
+     border: 1px solid #dddddd;
+     padding: 20px;
+     margin: 20px;
+}
+.schedule-text{
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 100%;
+    max-width: min-content;
+    position: absolute;
+    left: 10%;
+    margin: unset;
+    ;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .box {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .box {
+    width: 30%;
+  }
+}
+
+
+.footer{
+  height: 2rem;
+  background-color: rgb(0, 45, 69);
+  padding: 30px;
+  /* padding-left: 7rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around
+}
+.carousel{
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.cr1{
+  height: 130px;
+  margin: 1rem 4rem;  
+}
+.cr2 {
+  height: 130px;
+  margin: 1rem 4rem;    
+}
+.slider{
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media only screen and (max-width: 768px) {
+  .header-img{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .accordian-tab {
+    position: absolute;
+    top: 10rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tabt {
+    background: yellowgreen;
+    border-radius: 0.8rem;
+    padding: 0.5rem 2rem;
+    margin: 2rem;
+  }
+
+  .mountain1 {
+    margin-left: 2rem;
+  }
+
+  .la-icon {
+    left: 0;
+  }
+
+  .icon1 {
+    height: 2rem;
+    top: 2rem;
+  }
+  .history-text {
+    height: 1rem;
+    top: 4rem;
+    left: -5%;
   }
 }
